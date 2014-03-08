@@ -6,10 +6,10 @@
 
 <% @statuses.each do |status|%>
 <div class="status">
-  <strong>
-    <%= status.name %>
-  </strong>
-
+  <p>
+    <b><%= status.user.full_name %></b>
+  </p>
+  
   <p><%= status.content %></p>
 
   <div class="meta">
