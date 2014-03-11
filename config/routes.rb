@@ -4,6 +4,8 @@ Treebook::Application.routes.draw do
   root :to => "statuses#index"
 
   devise_for :users
+  get "/:id", to: "profiles#show"
+
 
 	devise_scope :user do
 		get "sign_up", to: "devise/registrations#new"
